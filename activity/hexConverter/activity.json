@@ -1,0 +1,20 @@
+{
+  "name": "hexConverter",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "activity description",
+  "ref": "github.com/dtredinnick13/HexConverter",
+  "author": "Don Tredinnick <dtredinnick@tibco.com>",
+  "inputs":[
+    {
+      "name": "hexBytes",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "integer"
+    }
+  ]
+}
