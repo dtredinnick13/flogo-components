@@ -10,7 +10,7 @@
     "smallIcon": "hex.png",
     "description": "activity description"
   },
-  "ref": "github.com/dtredinnick13/HexConverter",
+  "ref": "HexConverter/activity/hexConverter",
   "inputs":[
     {
       "name": "hexBytes",
