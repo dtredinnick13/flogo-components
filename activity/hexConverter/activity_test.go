@@ -1,4 +1,4 @@
-package hexConverter
+package hexconverter
 
 import (
 	"io/ioutil"

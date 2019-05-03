@@ -1,4 +1,4 @@
-package hexConverter
+package hexconverter
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ var log = logger.GetLogger("activity-dtredinnick-hexConverter")
 
 const (
 	hexBytes = "70"
-	result   = 110
+	result   = "result"
 )
 
 // MyActivity is a stub for your Activity implementation
@@ -39,11 +39,11 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 
 	ivHexInput, ok := hexInput.(string)
 	if !ok {
-		context.SetOutput("result", "HEX_VALUE_NOT_SET")
+		context.SetOutput("result", 0)
 		return true, fmt.Errorf("No hex value provided")
 	}
 
-	value, _ := strconv.ParseInt(hexValue, 16, 64)
+	value, _ := strconv.ParseInt(ivHexInput, 16, 64)
 
 	// Set the output value in the context
 	context.SetOutput(result, value)
