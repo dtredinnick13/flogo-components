@@ -12,7 +12,7 @@ import (
 var log = logger.GetLogger("activity-dtredinnick-hexConverter")
 
 const (
-	hexBytes = "70"
+	hexBytes = "hexBytes"
 	result   = "result"
 )
 
