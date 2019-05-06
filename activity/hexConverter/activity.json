@@ -1,5 +1,5 @@
 {
-  "name": "hexconverter",
+  "name": "hexConverter",
   "title": "Hex Converter",
   "version": "0.0.1",
   "type": "flogo:activity",
@@ -10,7 +10,7 @@
     "smallIcon": "hex.png",
     "description": "activity description"
   },
-  "ref": "HexConverter/activity/hexconverter",
+  "ref": "HexConverter/activity/hexConverter",
   "inputs":[
     {
       "name": "hexBytes",
