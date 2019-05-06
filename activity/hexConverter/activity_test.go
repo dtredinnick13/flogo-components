@@ -25,6 +25,15 @@ func getActivityMetadata() *activity.Metadata {
 	return activityMetadata
 }
 
+func TestActivityRegistration(t *testing.T) {
+	act := NewActivity(getActivityMetadata())
+	if act == nil {
+		t.Error("Activity Not Registered")
+		t.Fail()
+		return
+	}
+}
+
 func TestCreate(t *testing.T) {
 
 	act := NewActivity(getActivityMetadata())
